@@ -1,2 +1,4 @@
-# de_libro
-A simple bookstore application
+# De Libro
+A simple bookstore application using Hapi.js
+
+

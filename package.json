@@ -1,0 +1,33 @@
+{
+  "name": "de_libro",
+  "version": "1.0.0",
+  "description": "A simple bookstore application using Hapi.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karthickram286/de_libro.git"
+  },
+  "author": "Karthick R",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/karthickram286/de_libro/issues"
+  },
+  "homepage": "https://github.com/karthickram286/de_libro#readme",
+  "dependencies": {
+    "@hapi/hapi": "^19.1.0",
+    "@hapi/joi": "^17.1.0",
+    "axios": "^0.19.2",
+    "bcrypt": "^3.0.8",
+    "config": "^3.2.5",
+    "cors": "^2.8.5",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.15",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
