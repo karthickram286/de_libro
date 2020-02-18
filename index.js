@@ -1,6 +1,7 @@
 'use strict';
 
 const hapiServer = require('./server/hapiServer');
+const bookConsumer = require('./book/bookConsumer');
 
 /**
  * Rejection handler
@@ -15,3 +16,7 @@ process.on('unhandledRejection', (err) => {
  */
 hapiServer();
 
+/**
+ * Starting the book consumer
+ */
+bookConsumer();

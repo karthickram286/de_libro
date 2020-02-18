@@ -19,6 +19,7 @@
   "dependencies": {
     "@hapi/hapi": "^19.1.1",
     "@hapi/joi": "^17.1.0",
+    "amqplib": "^0.5.5",
     "axios": "^0.19.2",
     "bcrypt": "^3.0.8",
     "config": "^3.2.5",

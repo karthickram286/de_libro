@@ -7,6 +7,7 @@ const redisClient = redis.createClient(6379);
 const getAsync = util.promisify(redisClient.get).bind(redisClient);
 
 const db = require('../connection/postgres.connection');
+const bookProducer = require('../book/bookProducer');
 
 /**
  * Adds a book to the DB
@@ -32,6 +33,9 @@ const addBook = async (id, name, price, quantity, author, added_by) => {
     await db.none('insert into books(book_id, name, price, quantity, authorname, added_by) values(${book.id}, ${book.name}, ${book.price}, ${book.quantity}, ${book.author}, ${book.added_by})', {
         book: { id, name, price, quantity, author, added_by }
     });
+
+    // Notifying using Book producer
+    bookProducer(name, price, quantity);
 }
 
 /**
