@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/karthickram286/de_libro#readme",
   "dependencies": {
-    "@hapi/hapi": "^19.1.0",
+    "@hapi/hapi": "^19.1.1",
     "@hapi/joi": "^17.1.0",
     "axios": "^0.19.2",
     "bcrypt": "^3.0.8",
@@ -26,6 +26,7 @@
     "jsonwebtoken": "^8.5.1",
     "lodash": "^4.17.15",
     "pg-promise": "^10.4.3",
+    "redis": "^3.0.2",
     "uuid": "^3.4.0",
     "winston": "^3.2.1"
   },

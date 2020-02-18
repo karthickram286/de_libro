@@ -2,8 +2,6 @@
 
 const hapiServer = require('./server/hapiServer');
 
-const postgresDb = require('./connection/postgres.connection');
-
 /**
  * Rejection handler
  */
