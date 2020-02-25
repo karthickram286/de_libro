@@ -1,6 +1,6 @@
 'use strict';
 
-const Hapi = require('@hapi/hapi');
+const Hapi = require('hapi');
 const serverOptions = require('./serverOptions');
 const authRoutes = require('../routes/authRoutes');
 const bookRoutes = require('../routes/bookRoutes');

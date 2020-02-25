@@ -1,7 +1,7 @@
 'use strict';
 
 const uuid = require('uuid/v1');
-const bcrypt = require('bcrypt');
+// const bcrypt = require('bcrypt');
 
 const userAPI = require('../user/userAPI');
 const userSchema = require('../schema/user').userSchema;
@@ -48,11 +48,7 @@ const authRoutes = (server) => [{
             // UserSchema validation
             await userSchema.validateAsync({ firstname, lastname, email, password });
 
-            // Hashing the password
-            const salt = await bcrypt.genSalt(2);
-            const hashedPassword = await bcrypt.hash(password, salt);
-
-            await userAPI.addUser(userId, firstname, lastname, email, hashedPassword);
+            await userAPI.addUser(userId, firstname, lastname, email, password);
         } catch (err) {
             console.log(err);
             return err.message;
