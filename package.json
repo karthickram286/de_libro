@@ -18,7 +18,7 @@
   "homepage": "https://github.com/karthickram286/de_libro#readme",
   "dependencies": {
     "amqplib": "^0.5.5",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "config": "^3.2.6",
     "cors": "^2.8.5",
     "hapi": "^18.1.0",
