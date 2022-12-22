@@ -23,7 +23,7 @@
     "cors": "^2.8.5",
     "hapi": "^18.1.0",
     "joi": "^14.3.1",
-    "jsonwebtoken": "^8.5.1",
+    "jsonwebtoken": "^9.0.0",
     "pg-promise": "^10.4.4",
     "redis": "^3.0.2",
     "uuid": "^7.0.0"
