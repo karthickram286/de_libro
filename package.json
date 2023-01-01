@@ -19,7 +19,7 @@
   "dependencies": {
     "amqplib": "^0.5.5",
     "axios": "^0.21.1",
-    "config": "^3.2.6",
+    "config": "^3.3.8",
     "cors": "^2.8.5",
     "hapi": "^18.1.0",
     "joi": "^14.3.1",
